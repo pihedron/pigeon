@@ -1,3 +1,3 @@
 # Pigeon
 
-Boost your productivity with Pigeon.
+Communicate across the internet anonymously through PiNet.

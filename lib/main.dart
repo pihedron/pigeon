@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pigeon/post_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -98,8 +99,16 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             const Text(
-              'Boost your productivity with Pigeon!',
+              'Explore PiNet from anywhere!',
             ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PostPage()));
+                },
+                child: const Text('View Post')),
           ],
         ),
       ),
